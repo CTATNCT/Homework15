@@ -1,0 +1,53 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 14px;
+    border: 15px  black;
+}
+
+.main-box *{
+    width: 100%;
+}
+
+input + p{
+    display: none;
+}
+
+input:valid + p{
+    display: none;
+}
+
+input:invalid + p{
+    display: none;
+}
+
+input + p + p{
+    display: none;
+    color: rgb(146, 146, 146);
+}
+
+input + p + p + p{
+    display: none;
+    color: green;
+}
+
+input:valid + p + p + p{
+    display: block;
+}
+
+input:invalid + p + p{
+    display: block;
+}
